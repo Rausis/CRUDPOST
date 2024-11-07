@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro de Mensagens</title>
+    <style>
+        .post {
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            display: flex;
+        }
+        .del{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enviar uma Mensagem</h1>
+    
+    <!-- Formulário de entrada -->
+    <form id="messageForm">
+        <input type="text" id="messageInput" placeholder="Digite sua mensagem aqui">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Botão de exclusão -->
+    <button id="deleteButton">Excluir todas as mensagens</button>
+ 
+
+    <!-- Exibir mensagens -->
+    <div id="messageBoard">
+        <h2>Mensagens:</h2>
+        <div id="messagesContainer"></div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
